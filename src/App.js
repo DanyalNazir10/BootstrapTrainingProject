@@ -1,4 +1,4 @@
-import Header from "./components/Header";
+import Header from "./components/header";
 import MainSection from "./components/mainSection";
 
 export default function App()

@@ -1,5 +1,6 @@
 import SimpleSlider from "./slider";
 import Card from "./card";
+import MainImage from "./mainImage"
 import horizontal_slider_images from "../../utils/horizontalSliderImages";
 import vertical_slider_images from "../../utils/verticalSliderImages";
 
@@ -34,52 +35,10 @@ export default function mainSection() {
                     Slider_images={vertical_slider_images}
                   />
                 </div>
-                <div className="col-lg-8 col-6">
-                  <div className="row justify-content-center text-center">
-                    <h3 style={{color: "#33659e"}}>AGELESS MULTI-COLLAGEN® PROTEIN POWDER</h3>
-                  </div>
-                  <div className="row">
-                    <span className="stars text-center">
-                      <i
-                        className="fa-solid fa-star"
-                        style={{ color: "#3ed016" }}
-                      ></i>
-                      <i
-                        className="fa-solid fa-star"
-                        style={{ color: "#3ed016" }}
-                      ></i>
-                      <i
-                        className="fa-solid fa-star"
-                        style={{ color: "#3ed016" }}
-                      ></i>
-                      <i
-                        className="fa-solid fa-star"
-                        style={{ color: "#3ed016" }}
-                      ></i>
-                      <i
-                        className="fa-solid fa-star"
-                        style={{ color: "#3ed016" }}
-                      ></i>
-                      <a className="nav-link d-inline" style={{color:"#33659e"}}>3239 Reviews</a>
-                    </span>
-                  </div>
-                  <div className="row slider-main-img-div" style={{height: "500px"}}>
-                    <img
-                      className="slider-main-img"
-                      src="https://www.biotrust.com/cdn/shop/products/Unflavored-4-Delicious-Flavors_1080x.png?v=1657121683"
-                    ></img>
-                  </div>
-                  <div className="row">
-                    <img
-                      src={
-                        "https://cdn.shopify.com/s/files/1/2451/8571/t/3/assets/free-report-image-1546015359856-1555446388183.png"
-                      }
-                      alt="Receive two free e-books"
-                    ></img>
-                  </div>
-                </div>
+              <MainImage/>
               </div>
             </div>
+
             <div className="col-lg-6">
               <div className="container">
                 <div className="row justify-content-center text-center">
@@ -114,6 +73,7 @@ export default function mainSection() {
                     </button>
                   </div>
                 </div>
+                
                 <div className="row g-0">
                   <div className="col-4">
                     <div
@@ -164,10 +124,10 @@ export default function mainSection() {
                     </div>
                   </div>
                   <div className="col-4 d-flex align-items-center">
-                    <Card title={"2 PACKS"} save={"39.20"}></Card>
+                    <Card title={"2 PACKS"} save={"39.20"}/>
                   </div>
                   <div className="col-4 d-flex align-items-center">
-                    <Card title={"3 PACKS"} save={"58.80"}></Card>
+                    <Card title={"3 PACKS"} save={"58.80"}/>
                   </div>
                 </div>
                 <div className="row mt-5">
@@ -179,7 +139,7 @@ export default function mainSection() {
                       <SimpleSlider
                         isVertical={false}
                         Slider_images={horizontal_slider_images}
-                      ></SimpleSlider>
+                      />
                     </div>
                   </div>
                 </div>
