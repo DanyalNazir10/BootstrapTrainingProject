@@ -1,9 +1,9 @@
-import SimpleSlider from "./sliders";
-import Cards from "./cards";
-import horizontal_slider_images from "./utils/horizontalSliderImages";
-import vertical_slider_images from "./utils/verticalSliderImages";
+import SimpleSlider from "./slider";
+import Card from "./card";
+import horizontal_slider_images from "../../utils/horizontalSliderImages";
+import vertical_slider_images from "../../utils/verticalSliderImages";
 
-export default function MainSection() {
+export default function mainSection() {
   return (
     <>
     <main className="container-fluid">
@@ -164,10 +164,10 @@ export default function MainSection() {
                     </div>
                   </div>
                   <div className="col-4 d-flex align-items-center">
-                    <Cards title={"2 PACKS"} save={"39.20"}></Cards>
+                    <Card title={"2 PACKS"} save={"39.20"}></Card>
                   </div>
                   <div className="col-4 d-flex align-items-center">
-                    <Cards title={"3 PACKS"} save={"58.80"}></Cards>
+                    <Card title={"3 PACKS"} save={"58.80"}></Card>
                   </div>
                 </div>
                 <div className="row mt-5">

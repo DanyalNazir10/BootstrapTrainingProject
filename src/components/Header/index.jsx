@@ -1,6 +1,7 @@
 import React from "react";
+import {myAccountDropDownArr, shopDropDownArr, bioTrustDropDownArr} from "../../utils/dropDownArrays";
 
-export default function Header() {
+export default function header() {
   return (
     <header>
       <nav className="navbar navbar-expand-lg nav_header">
@@ -123,41 +124,15 @@ export default function Header() {
                       className="dropdown-menu bg-black"
                       aria-labelledby="myAccountDropdown"
                     >
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Purchase History
-                        </a>
-                      </li>
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Manage Subscriptions
-                        </a>
-                      </li>
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Track My Order
-                        </a>
-                      </li>
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Forget Password
-                        </a>
-                      </li>
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Make Account
-                        </a>
-                      </li>
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Customer Support
-                        </a>
-                      </li>
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Login
-                        </a>
-                      </li>
+                      {myAccountDropDownArr.map(item => {
+                        return(
+                          <li>
+                          <a className="dropdown-item" href="#">
+                            {item}
+                          </a>
+                        </li>
+                        )
+                      })}
                     </ul>
                   </div>
                 </div>
@@ -240,46 +215,15 @@ export default function Header() {
                         className="dropdown-menu"
                         aria-labelledby="shopDropdown"
                       >
-                        <li>
+                       {shopDropDownArr.map(item => {
+                        return(
+                          <li>
                           <a className="dropdown-item" href="#">
-                            ALL PRODUCTS
+                            {item}
                           </a>
                         </li>
-                        <li>
-                          <a className="dropdown-item" href="#">
-                            PROTEIN
-                          </a>
-                        </li>
-                        <li>
-                          <a className="dropdown-item" href="#">
-                            COLLAGEN PROTEIN
-                          </a>
-                        </li>
-                        <li>
-                          <a className="dropdown-item" href="#">
-                            IMMUNE SUPPORT
-                          </a>
-                        </li>
-                        <li>
-                          <a className="dropdown-item" href="#">
-                            HEALTHY LIVING
-                          </a>
-                        </li>
-                        <li>
-                          <a className="dropdown-item" href="#">
-                            DIGESTIVE HEALTH
-                          </a>
-                        </li>
-                        <li>
-                          <a className="dropdown-item" href="#">
-                            ANTI-AGING
-                          </a>
-                        </li>
-                        <li>
-                          <a className="dropdown-item" href="#">
-                            GEAR
-                          </a>
-                        </li>
+                        )
+                      })}
                       </ul>
                     </div>
                   </div>
@@ -310,51 +254,15 @@ export default function Header() {
                         className="dropdown-menu"
                         aria-labelledby="bioTrustTagDropdown"
                       >
-                        <li>
+                       {bioTrustDropDownArr.map(item =>{
+                        return(
+                          <li>
                           <a className="dropdown-item" href="#">
-                            OUR STORY
+                            {item}
                           </a>
                         </li>
-                        <li>
-                          <a className="dropdown-item" href="#">
-                            OUR COACHES
-                          </a>
-                        </li>
-                        <li>
-                          <a className="dropdown-item" href="#">
-                            INSTAGRAM
-                          </a>
-                        </li>
-                        <li>
-                          <a className="dropdown-item" href="#">
-                            FACEBOOK
-                          </a>
-                        </li>
-                        <li>
-                          <a className="dropdown-item" href="#">
-                            RECIPES
-                          </a>
-                        </li>
-                        <li>
-                          <a className="dropdown-item" href="#">
-                            NEUTRITION
-                          </a>
-                        </li>
-                        <li>
-                          <a className="dropdown-item" href="#">
-                            FITNESS
-                          </a>
-                        </li>
-                        <li>
-                          <a className="dropdown-item" href="#">
-                            LIFESTYLE
-                          </a>
-                        </li>
-                        <li>
-                          <a className="dropdown-item" href="#">
-                            VIDEOS
-                          </a>
-                        </li>
+                        )
+                       })}
                       </ul>
                     </div>
                   </div>
@@ -376,7 +284,7 @@ export default function Header() {
 
                 <div className="input-group-append">
                   <button type="submit" className="btn" id="search-btn">
-                    <i className="fa-solid fa-magnifying-glass fa-lg"></i>
+                    <i className="fa-solid fa-magnifying-glass fa-lg" style={{color: "#33659e"}}></i>
                   </button>
                 </div>
               </div>

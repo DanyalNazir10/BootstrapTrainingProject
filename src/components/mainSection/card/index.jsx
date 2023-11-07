@@ -1,4 +1,4 @@
-export default function Cards({title, save}) {
+export default function card({title, save}) {
   return (
 
     <div class="card text-center rounded-0" style={{border:"3px solid #33659e"}}>

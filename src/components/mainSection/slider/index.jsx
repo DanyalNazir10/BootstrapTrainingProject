@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
 
-export default function SimpleSlider({
+export default function simpleSlider ({
   isVertical = true,
   Slider_images,
   style,
 }) {
-  const [selectedImage, setSelectedImage] = useState(0);
 
   const settings = {
     infinite: true,
@@ -19,8 +18,6 @@ export default function SimpleSlider({
   };
 
   const onThumbnailClick = (index) => {
-    setSelectedImage(index);
-
     const mainImage = document.querySelector(".slider-main-img");
     if (mainImage) {
       mainImage.src = Slider_images[index];

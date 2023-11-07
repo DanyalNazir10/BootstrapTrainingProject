@@ -1,10 +1,10 @@
-import slider_image1 from "../images/nav-img1.png"
-import slider_image2 from "../images/nav-img2.png"
-import slider_image3 from "../images/nav-img3.png"
-import slider_image4 from "../images/nav-img4.png"
-import slider_image5 from "../images/nav-img5.png"
-import slider_image6 from "../images/nav-img6.png"
-import slider_image7 from "../images/nav-img7.png"
+import slider_image1 from "../assets/images/nav-img1.png"
+import slider_image2 from "../assets/images/nav-img2.png"
+import slider_image3 from "../assets/images/nav-img3.png"
+import slider_image4 from "../assets/images/nav-img4.png"
+import slider_image5 from "../assets/images/nav-img5.png"
+import slider_image6 from "../assets/images/nav-img6.png"
+import slider_image7 from "../assets/images/nav-img7.png"
 
 
 
