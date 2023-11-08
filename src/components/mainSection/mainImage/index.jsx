@@ -10,7 +10,6 @@ export default function mainImage() {
       </div>
       <div className="row">
         <span className="stars text-center">
-            
           {[1, 2, 3, 4, 5].map((index) => (
             <Star key={index} color="#3ed016" />
           ))}
