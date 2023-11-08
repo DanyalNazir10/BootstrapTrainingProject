@@ -39,4 +39,8 @@ header .nav-divider {
 }
 header .dropdown:hover .dropdown-menu {
   display: block !important;
+}
+
+main .slick-prev {
+  background: black !important;
 }/*# sourceMappingURL=main.css.map */

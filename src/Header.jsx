@@ -10,9 +10,10 @@ export default function Header() {
               <a className="navbar-brand nav-link text-white" href="#">
                 <span className="p-2">
                   <i
-                    class="fa-solid fa-children fa-lg"
+                    className="fa-solid fa-children fa-lg"
                     style={{ color: "#90b4f4" }}
-                  ></i>
+                  >
+                  </i>
                 </span>
                 EVERY ORDER CAN HELP END CHILDHOOD
               </a>
