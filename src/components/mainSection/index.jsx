@@ -1,9 +1,10 @@
-import SimpleSlider from "./Sliders";
-import Cards from "./Cards";
-import horizontal_slider_images from "./utils/Horizontal-Slider-Images";
-import vertical_slider_images from "./utils/Vertical-Slider-images";
+import SimpleSlider from "../../../src/components/mainSection/slider";
+import Card from "../../../src/components/mainSection/card";
+import MainImage from "../../../src/components/mainSection/mainImage"
+import horizontal_slider_images from "../../../src/utils/horizontalSliderImages";
+import vertical_slider_images from "../../../src/utils/verticalSliderImages";
 
-export default function MainSection() {
+export default function mainSection() {
   return (
     <>
     <main className="container-fluid">
@@ -11,11 +12,11 @@ export default function MainSection() {
         <div className="col-12" aria-label="breadcrumb">
           <ol className="breadcrumb">
             <li className="breadcrumb-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" style={{color:"#33659e"}} href="#">
                 HOME
               </a>
             </li>
-            <li className="breadcrumb-item active nav-link" aria-current="page">
+            <li className="breadcrumb-item active nav-link" style={{color:"#33659e"}} aria-current="page">
               COLLAGEN PROTEIN
             </li>
           </ol>
@@ -31,55 +32,13 @@ export default function MainSection() {
                   <SimpleSlider
                     style={{ margin: "50px" }}
                     isVertical={true}
-                    Slider_images={vertical_slider_images}
+                    sliderImages={vertical_slider_images}
                   />
                 </div>
-                <div className="col-lg-8 col-6">
-                  <div className="row justify-content-center text-center">
-                    <h3 style={{color: "#33659e"}}>AGELESS MULTI-COLLAGEN® PROTEIN POWDER</h3>
-                  </div>
-                  <div className="row">
-                    <span className="stars text-center">
-                      <i
-                        className="fa-solid fa-star"
-                        style={{ color: "#3ed016" }}
-                      ></i>
-                      <i
-                        className="fa-solid fa-star"
-                        style={{ color: "#3ed016" }}
-                      ></i>
-                      <i
-                        className="fa-solid fa-star"
-                        style={{ color: "#3ed016" }}
-                      ></i>
-                      <i
-                        className="fa-solid fa-star"
-                        style={{ color: "#3ed016" }}
-                      ></i>
-                      <i
-                        className="fa-solid fa-star"
-                        style={{ color: "#3ed016" }}
-                      ></i>
-                      <a style={{textDecoration:"none", color:"#33659e"}}>3239 Reviews</a>
-                    </span>
-                  </div>
-                  <div className="row">
-                    <img
-                      className="slider-main-img"
-                      src="https://www.biotrust.com/cdn/shop/products/Unflavored-4-Delicious-Flavors_1080x.png?v=1657121683"
-                    ></img>
-                  </div>
-                  <div className="row">
-                    <img
-                      src={
-                        "https://cdn.shopify.com/s/files/1/2451/8571/t/3/assets/free-report-image-1546015359856-1555446388183.png"
-                      }
-                      alt="Receive two free e-books"
-                    ></img>
-                  </div>
-                </div>
+              <MainImage/>
               </div>
             </div>
+
             <div className="col-lg-6">
               <div className="container">
                 <div className="row justify-content-center text-center">
@@ -104,13 +63,17 @@ export default function MainSection() {
                   <div className="col-6">
                     <button
                       type="button"
-                      class="btn btn-primary btn-lg"
+                      class="btn btn-primary btn-lg position-relative"
                       style={{ background: "#33659e", width: "100%" }}
                     >
                       Subscribe & Save 40%
+                       <span class="badge position-absolute top-0 start-100 translate-middle p-1 border border-light rounded-circle" style={{fontSize:"8px", background:"#2bb34d"}}>?
+                        <span class="d-none badge-div"></span>
+                      </span>
                     </button>
                   </div>
                 </div>
+                
                 <div className="row g-0">
                   <div className="col-4">
                     <div
@@ -161,22 +124,22 @@ export default function MainSection() {
                     </div>
                   </div>
                   <div className="col-4 d-flex align-items-center">
-                    <Cards title={"2 PACKS"} save={"39.20"}></Cards>
+                    <Card title={"2 PACKS"} save={"39.20"}/>
                   </div>
                   <div className="col-4 d-flex align-items-center">
-                    <Cards title={"3 PACKS"} save={"58.80"}></Cards>
+                    <Card title={"3 PACKS"} save={"58.80"}/>
                   </div>
                 </div>
                 <div className="row mt-5">
                   <div className="container">
                     <div className="row text-center">
-                      <h6>PHOTOS FROM THE #biotrust COMMUNITY</h6>
+                      <h6 style={{color:"#33659e"}}>PHOTOS FROM THE #biotrust COMMUNITY</h6>
                     </div>
                     <div className="row horizontal-slider w-100">
                       <SimpleSlider
                         isVertical={false}
-                        Slider_images={horizontal_slider_images}
-                      ></SimpleSlider>
+                        sliderImages={horizontal_slider_images}
+                      />
                     </div>
                   </div>
                 </div>

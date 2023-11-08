@@ -1,13 +1,12 @@
-import Header from "./Header";
-import MainSection from "./MainSection";
+import Header from "../src/components/header";
+import MainSection from "../src/components/mainSection";
 
 export default function App()
 {
   return (
     <>
-    <Header></Header>
-    <MainSection></MainSection>
+    <Header/>
+    <MainSection/>
     </>
   );
 }
-

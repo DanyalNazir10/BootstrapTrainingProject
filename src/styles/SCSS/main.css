@@ -13,6 +13,14 @@ header .nav-footer .shopDropdown .dropdown-item {
   color: #33659e;
   font-weight: 500;
 }
+header .nav-footer .shopButton {
+  display: block;
+  background-color: #33659e;
+  color: white;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+}
 header .nav-footer .bioTrustDropdown .dropdown-toggle::after {
   content: none;
 }
@@ -41,6 +49,39 @@ header .dropdown:hover .dropdown-menu {
   display: block !important;
 }
 
-main .slick-prev {
-  background: black !important;
-}/*# sourceMappingURL=main.css.map */
+.nav-link:hover {
+  color: #90b4f4 !important;
+}
+
+main .vertical-slider .slick-next {
+  top: -2%;
+  left: 32%;
+}
+main .vertical-slider .slick-prev {
+  top: 102%;
+  left: 32%;
+}
+main .horizontal-slider .slick-next {
+  right: 0;
+}
+main .horizontal-slider .slick-prev {
+  left: -4%;
+}
+main .slider-main-img-div {
+  overflow: hidden;
+}
+main .slider-main-img-div .slider-main-img {
+  transition: transform 0.3s ease;
+}
+main .slider-main-img-div .slider-main-img:hover {
+  transform: scale(1.5);
+  transform-origin: center center;
+}
+main .badge:hover .badge-div {
+  display: block;
+}
+main .slick-prev,
+main .slick-next {
+  background: #33659e !important;
+  border-radius: 15px;
+}
