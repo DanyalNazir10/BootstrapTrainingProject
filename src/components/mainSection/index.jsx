@@ -32,7 +32,7 @@ export default function mainSection() {
                   <SimpleSlider
                     style={{ margin: "50px" }}
                     isVertical={true}
-                    Slider_images={vertical_slider_images}
+                    sliderImages={vertical_slider_images}
                   />
                 </div>
               <MainImage/>
@@ -138,7 +138,7 @@ export default function mainSection() {
                     <div className="row horizontal-slider w-100">
                       <SimpleSlider
                         isVertical={false}
-                        Slider_images={horizontal_slider_images}
+                        sliderImages={horizontal_slider_images}
                       />
                     </div>
                   </div>

@@ -1,33 +1,23 @@
-import React, { useState } from "react";
 import Slider from "react-slick";
+import {sliderSettings} from "../../../../src/utils/sliderSettings";
 
 export default function simpleSlider ({
   isVertical = true,
-  Slider_images,
+  sliderImages,
   style,
 }) {
-
-  const settings = {
-    infinite: true,
-    speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    vertical: isVertical,
-    arrows: true,
-    verticalSwiping: true,
-  };
 
   const onThumbnailClick = (index) => {
     const mainImage = document.querySelector(".slider-main-img");
     if (mainImage) {
-      mainImage.src = Slider_images[index];
+      mainImage.src = sliderImages[index];
     }
   };
 
   return (
     <div>
-      <Slider style={{ ...style }} {...settings}>
-        {Slider_images.map((image, index) => {
+      <Slider style={{ ...style }} {...{...sliderSettings, vertical: isVertical}}>
+        {sliderImages.map((image, index) => {
           return (
             <div key={index}>
               <img
