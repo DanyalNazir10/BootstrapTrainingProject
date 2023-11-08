@@ -1,4 +1,4 @@
-import {shopDropDownArr, bioTrustDropDownArr} from "../../../utils/dropDownArrays";
+import {shopDropDownArr, bioTrustDropDownArr} from "../../../../src/utils/dropDownArrays";
 
 export default function navFooter()
 {

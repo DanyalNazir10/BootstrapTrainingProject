@@ -1,5 +1,5 @@
-import Header from "./components/header";
-import MainSection from "./components/mainSection";
+import Header from "../src/components/header";
+import MainSection from "../src/components/mainSection";
 
 export default function App()
 {
@@ -10,4 +10,3 @@ export default function App()
     </>
   );
 }
-

@@ -1,4 +1,4 @@
-import {myAccountDropDownArr} from "../../../utils/dropDownArrays";
+import {myAccountDropDownArr} from "../../../../src/utils/dropDownArrays";
 
 export default function navHeader(){
     return(

@@ -1,8 +1,8 @@
-import SimpleSlider from "./slider";
-import Card from "./card";
-import MainImage from "./mainImage"
-import horizontal_slider_images from "../../utils/horizontalSliderImages";
-import vertical_slider_images from "../../utils/verticalSliderImages";
+import SimpleSlider from "../../../src/components/mainSection/slider";
+import Card from "../../../src/components/mainSection/card";
+import MainImage from "../../../src/components/mainSection/mainImage"
+import horizontal_slider_images from "../../../src/utils/horizontalSliderImages";
+import vertical_slider_images from "../../../src/utils/verticalSliderImages";
 
 export default function mainSection() {
   return (

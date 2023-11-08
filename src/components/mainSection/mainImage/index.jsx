@@ -1,4 +1,4 @@
-import Star from "../star";
+import Star from "../../../../src/components/mainSection/star";
 
 export default function mainImage() {
   return (
