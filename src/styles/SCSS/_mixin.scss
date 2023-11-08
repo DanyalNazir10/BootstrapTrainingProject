@@ -1,0 +1,6 @@
+@import "var";
+
+@mixin dropdown-item-style{
+    color: $blue-item-color;
+    font-weight:500;
+}

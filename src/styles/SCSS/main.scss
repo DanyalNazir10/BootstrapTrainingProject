@@ -1,0 +1,68 @@
+@import "var";
+@import "mixin";
+
+header {
+  .nav_header {
+    background-color: $blue-item-color;
+    color: white;
+
+    a {
+      color: white;
+    }
+  }
+
+  .nav-footer {
+    color: $blue-item-color;
+    font-weight: bold;
+
+    .shopDropdown {
+      .dropdown-item {
+        @include dropdown-item-style;
+      }
+    }
+
+    .bioTrustDropdown {
+      .dropdown-toggle::after {
+        content: none;
+      }
+
+      .dropdown-menu {
+        list-style: none;
+
+        .dropdown-item {
+          @include dropdown-item-style;
+        }
+      }
+    }
+
+    .input-group {
+      .form-control {
+        &:focus {
+          box-shadow: inset 0 2px 2px rgba(255, 2, 200, 0.075),
+            0 0 8px rgb(180, 2, 109, 1) !important;
+          z-index: 0 !important;
+        }
+      }
+
+      #search-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+      }
+    }
+  }
+
+  .nav-divider {
+    border-top: 5px solid $blue-item-color;
+    opacity: 1;
+  }
+  .dropdown {
+    &:hover {
+      .dropdown-menu {
+        display: block !important;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,42 @@
+header .nav_header {
+  background-color: #33659e;
+  color: white;
+}
+header .nav_header a {
+  color: white;
+}
+header .nav-footer {
+  color: #33659e;
+  font-weight: bold;
+}
+header .nav-footer .shopDropdown .dropdown-item {
+  color: #33659e;
+  font-weight: 500;
+}
+header .nav-footer .bioTrustDropdown .dropdown-toggle::after {
+  content: none;
+}
+header .nav-footer .bioTrustDropdown .dropdown-menu {
+  list-style: none;
+}
+header .nav-footer .bioTrustDropdown .dropdown-menu .dropdown-item {
+  color: #33659e;
+  font-weight: 500;
+}
+header .nav-footer .input-group .form-control:focus {
+  box-shadow: inset 0 2px 2px rgba(255, 2, 200, 0.075), 0 0 8px rgb(180, 2, 109) !important;
+  z-index: 0 !important;
+}
+header .nav-footer .input-group #search-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+header .nav-divider {
+  border-top: 5px solid #33659e;
+  opacity: 1;
+}
+header .dropdown:hover .dropdown-menu {
+  display: block !important;
+}/*# sourceMappingURL=main.css.map */
